@@ -1,32 +1,29 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+    --bg-color: #d9cdf7;
+    --text-color: #271a45;
 }
 
 body {
-    min-height: 100%;   
-    width: 100%;    
+    background: var(--bg-color);
 }
 
-img {
-    display: block;
+body * {
+    color: var(--text-color);
+    height: 100vh;
 }
 
-.img-sofa {
-    width: 400px;
+#btn-close, 
+#animated {
+    display: none;
 }
 
-.container {
-    display: flex;
+#btn-360 {
+ display: none;
+}
+
+.app {
+    display: flex; 
     justify-content: center;
     align-items: center;
-    height: 100%;
-    background-color: rosybrown;
-    border-radius: 4444px;
-}
-
-.container-content {
-    width: 50%;
-    height: 100%;
+    gap: 63px;
 }
